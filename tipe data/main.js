@@ -129,41 +129,41 @@
 
 //////////////////////////////////////////////////////////////////////////
 
-// Meminta input saldo awal dari pengguna
-let saldoAwal = parseFloat(prompt("Masukkan saldo awal Anda:"));
+// // Meminta input saldo awal dari pengguna
+// let saldoAwal = parseFloat(prompt("Masukkan saldo awal Anda:"));
 
-// Fungsi untuk menghitung saldo akhir setelah pembelian
-function hitungSaldo(saldo) {
-    let lagi = true;
+// // Fungsi untuk menghitung saldo akhir setelah pembelian
+// function hitungSaldo(saldo) {
+//     let lagi = true;
 
-    while (lagi) {
-        // Meminta input nama makanan
-        let namaMakanan = prompt("Masukkan nama makanan yang dibeli (atau ketik 'selesai' untuk keluar):");
+//     while (lagi) {
+//         // Meminta input nama makanan
+//         let namaMakanan = prompt("Masukkan nama makanan yang dibeli (atau ketik 'selesai' untuk keluar):");
         
-        // Jika pengguna mengetik 'selesai', keluar dari loop
-        if (namaMakanan.toLowerCase() === 'selesai') {
-            lagi = false;
-        } else {
-            // Meminta input harga makanan
-            let hargaMakanan = parseFloat(prompt("Masukkan harga " + namaMakanan + ":"));
+//         // Jika pengguna mengetik 'selesai', keluar dari loop
+//         if (namaMakanan.toLowerCase() === 'selesai') {
+//             lagi = false;
+//         } else {
+//             // Meminta input harga makanan
+//             let hargaMakanan = parseFloat(prompt("Masukkan harga " + namaMakanan + ":"));
             
-            // Memeriksa apakah saldo cukup untuk membeli
-            if (saldo >= hargaMakanan) {
-                saldo -= hargaMakanan; // Mengurangi saldo
-                alert("Pembelian " + namaMakanan + " berhasil! Saldo tersisa: " + saldo);
-            } else {
-                alert("Saldo tidak cukup untuk membeli " + namaMakanan + ". Saldo Anda: " + saldo);
-            }
-        }
-    }
-    return saldo;
-}
+//             // Memeriksa apakah saldo cukup untuk membeli
+//             if (saldo >= hargaMakanan) {
+//                 saldo -= hargaMakanan; // Mengurangi saldo
+//                 alert("Pembelian " + namaMakanan + " berhasil! Saldo tersisa: " + saldo);
+//             } else {
+//                 alert("Saldo tidak cukup untuk membeli " + namaMakanan + ". Saldo Anda: " + saldo);
+//             }
+//         }
+//     }
+//     return saldo;
+// }
 
-// Menghitung saldo akhir
-let saldoAkhir = hitungSaldo(saldoAwal);
+// // Menghitung saldo akhir
+// let saldoAkhir = hitungSaldo(saldoAwal);
 
-// Menampilkan saldo akhir
-alert("Saldo akhir Anda adalah: " + saldoAkhir);
+// // Menampilkan saldo akhir
+// alert("Saldo akhir Anda adalah: " + saldoAkhir);
 
 /////////////////////////////////////////////////////////////////////////////////
 
